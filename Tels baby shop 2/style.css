@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: 'Poppins';
+    text-align: center;
+
+}
+a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+.wrapper{
+    width: 50%;
+    margin: 0 auto;
+    
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background: #c0392b;
+    position: fixed;
+}
+.box-area{
+    height: 50%;
+}
+.nav{
+    float: right;
+    line-height: 100px;
+    border-radius: 10px;
+
+}
+nav a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    letter-spacing: 4px;
+    font-size: 20px;
+    color: red;
+    padding: 36px 10px;
+    margin: 0 1px;
+    box-shadow: 0px 5px 0px #dedede;
+}
+
+nav ul li a:hover {
+    color: #555;
+  }
+ 
+nav a:hover{
+    background: blue;
+    color: black;
+}
+.main{
+    height: 100%;
+    position: fixed;
+}
+.banner-area{
+    background-image: url(./img/banner.jpeg);
+    background-size: cover;
+    background-position: center center;
+    top: 50px;
+    height: 30vh;
+    position: relative;
+    width: 100%;
+    
+}
+.content-area{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background: #fff;
+    top: 600px;
+
+}
+
+.login-form {
+    border: 3px solid #f1f1f1;
+    top: 25px;
+    height: 200px;
+    margin-top: 20px;
+  }
+  
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+ 
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+ 
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+/* The side navigation menu */
+ .sidenav {
+    height: 100%; 
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; 
+    right: 0;
+    background-color: rgb(224, 212, 231); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #64be27;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #130c1b;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } 
+
+ .btn-menu{
+     float: right;
+     background-color: rgb(62, 110, 151);
+     padding: 10px;
+     border-radius:10px; 
+     width: 5%;
+     margin-left: 10px;
+ }
+ .btn-menu:hover {
+    background-color:#002ead;
+    transition: 0.7s;
+}
+.btn-menu:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+}
+.columns{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    background-color: #ae90c9;
+    top: 500px;
+    height: 250px;
+    width: 600px;
+    float: left;
+    border: 10px;
+    margin: 20px;
+}
+.our-gallery{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    top: 500px;
+    height: 250px;
+    width: 600px;
+    float: left;
+    border: 10px;
+    margin: 20px;
+}
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.form-reg{
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=tel],input[type=email] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #ddbbbb;
+}
+
+
+
+
+input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=email]:focus{
+  background-color: rgb(150, 139, 243);
+  outline: none;
+}
+
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #99b8ad;
+  color: rgb(211, 78, 78);
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+
+a {
+  color: dodgerblue;
+}
+.footer{
+    height: 90px;
+    width: 100%;
+    background-color: #ae90c9;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    
+}
+.footer p{
+padding-left: 2px;
+}
+.footer-text-left{
+    float: left;
+}
+.gallery img{
+    height: 150px;
+    width: 100px;
+    display: block;
+    background: #fff;
+    float: left;
+    margin: 25px;
+        
+}
+table{
+    width: 100%;
+    height: 70%;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #ae90c9;
+    border-color: #96D4D4;
+  }

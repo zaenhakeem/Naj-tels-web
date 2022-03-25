@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>About Us</title>
+<style>
+ body {
+font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+  }  
+.menu-btn {
+   border: none;
+   height: 2px;
+   font-weight: bold;
+   padding: 12px 16px;
+   font-size: 18px;
+}
+.dropdown-menu {
+   position: relative;
+   display: inline-block;
+   height: 10px;
+}
+.menu-content {
+   display: none;
+   position: absolute;
+   background-color: #017575;
+   min-width: 160px;
+   z-index: 1;
+
+}
+nav{
+   background-color:  #00ffff;
+   list-style: none;
+   
+   
+
+}
+nav a{
+   text-decoration: none;
+   color: #fff;
+   
+}
+.links,.links-hidden{
+   display: inline-block;
+   color: rgb(255, 255, 255);
+   padding: 12px 16px;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: bold;
+}
+.links-hidden{
+   display: block;
+}
+.links{
+   display: inline-block;
+}
+.links-hidden:hover,.links:hover {
+   background-color: #00ffff;
+}
+.dropdown-menu:hover .menu-content {
+   display: block;
+}
+.dropdown-menu:hover .menu-btn {
+   background-color: #00ffff;
+}
+/*our staff style starts here*/
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #00ffff;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+</style>
+
+</head>
+<body>
+      <nav>
+         <a class="links" href="index.html">HOME</a>
+         <a class="links" href="services.html">SERVICES</a>
+         <a class="links" href="gallery.html">GALLERY</a>
+         <a class="links" href="contactus.html">CONTACT US</a>
+
+            <div class="dropdown-menu">
+         <a class="menu-btn" href="aboutUs.html">ABOUT US</a>
+
+               <div class="menu-content">
+                  <a class="links-hidden" href="Vision.html">Vision</a>
+                  <a class="links-hidden" href="Mission.html">Mission</a>
+                  <a class="links-hidden" href="values.html">Core values</a>
+                </div>
+            </div>
+      </nav>
+      <div class="our-staff">
+          <h2 style="text-align: center; color: green"> Our Staff </h2>
+      <div class="row">
+     <div class="column">
+       <div class="card">
+         <img src="./img/emp3.jpg" style="width:100%; height:450px;">
+         <div class="container">
+           <h2>Yasin Abdulahi</h2>
+           <p class="title">CEO & Founder</p>
+           <p>The CEO and the founder of AJ and companies. The leader of the team that brings you the best you can get inland and beyond</p>
+           <p>yassin404@gmail.com</p>
+           <p><button class="button">Contact</button></p>
+         </div>
+       </div>
+     </div>
+
+     <div class="column">
+       <div class="card">
+         <img src="./img/emp1.jpg" style="width:100%">
+         <div class="container">
+           <h2>Ramla Shariff</h2>
+           <p class="title">Art Director</p>
+           <p>The director of the AJ and companies ltd. Works in partnership with other companies to deliver top notch services</p>
+           <p>Ramlasharrif@gmail.com</p>
+           <p><button class="button">Contact</button></p>
+         </div>
+       </div>
+     </div>
+
+     <div class="column">
+       <div class="card">
+         <img src="./img/emp2.png" alt="John" style="height:450px; width: 100%;">
+         <div class="container">
+           <h2>Ruweidha Mohammed</h2>
+           <p class="title">Designer</p>
+           <p>Our world class designers team leader responsible for coordination of the teams responsible for designing our products and services.</p>
+           <p>Ruweidham001@gmail.com</p>
+           <p><button class="button">Contact</button></p>
+         </div>
+       </div>
+     </div>
+   </div> 
+  </div>
+</body>
+</html>
+
+
+
+

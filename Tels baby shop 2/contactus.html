@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<style>
+		
+
+.active,
+.demo:hover {
+  opacity: 1;
+} 
+.menu-btn {
+   border: none;
+   height: 2px;
+   font-weight: bold;
+   padding: 12px 16px;
+   font-size: 18px;
+}
+.dropdown-menu {
+   position: relative;
+   display: inline-block;
+   height: 10px;
+}
+.menu-content {
+   display: none;
+   position: absolute;
+   background-color: #017575;
+   min-width: 160px;
+   z-index: 1;
+
+}
+nav{
+   background-color: #0000b3;
+   list-style: none;
+   
+   
+
+   
+   
+
+}
+nav a{
+   text-decoration: none;
+   color: #fff;
+   
+}
+.links,.links-hidden{
+   display: inline-block;
+   color: rgb(255, 255, 255);
+   padding: 12px 16px;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: bold;
+}
+.links-hidden{
+   display: block;
+}
+.links{
+   display: inline-block;
+}
+.links-hidden:hover,.links:hover {
+   background-color: #00ffff;
+}
+.dropdown-menu:hover .menu-content {
+   display: block;
+}
+.dropdown-menu:hover .menu-btn {
+   background-color: #00ffff;
+}
+/*form style*/
+.contact-form{
+    width: 190%;
+    margin-top: 20px;
+    position: relative;
+    height: 40px;
+  
+}.contact-form input{
+    width: 100%;
+    display:block;
+    height: 30px;
+    margin:5px 0;
+    padding: 10px;
+    background: #0000ff;
+    color: #fff;
+    outline: none;
+    resize: none;
+}
+.message{
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    height: 60px;
+    background-color: #F0EAD6;
+}
+.contact-form .name{
+    display: flex;
+    justify-content: space-between;
+}.name input{
+    width: 49%;
+    margin: 0;
+}
+.contact-form .btn{
+    display: block;
+    margin-left:250px;
+    cursor: pointer;
+    
+}
+.btn-sub{
+	background-color: #154c79;
+	border-radius: 25px;
+	margin-top: 20px;
+	cursor: pointer;
+	font-weight: 100px;
+	border:none;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	color: white;
+
+
+}
+.myform{
+	height: 300px;
+}
+.maps{
+	float: right;
+	margin-top: 10px;
+	margin-left: 100px;
+	height: 500px;
+
+}
+.mypage{
+	float: left;
+	height: 700px
+}
+
+
+
+	</style>
+
+</head>
+<body>
+
+	 <nav>
+         <a class="links" href="index.html">HOME</a>
+         <a class="links" href="services.html">SERVICES</a>
+         <a class="links" href="gallery.html">GALLERY</a>
+            <div class="dropdown-menu">
+                <a class="menu-btn" href="aboutUs.html">ABOUT US</a>
+
+               <div class="menu-content">
+                  <a class="links-hidden" href="vision.html">Vision</a>
+                  <a class="links-hidden" href="mission.html">Mission</a>
+                  <a class="links-hidden" href="values.html">Core values</a>
+                </div>
+            </div>
+      </nav>
+      <div class="mypage">
+      <div class="myform">
+
+
+    <h2 class="heading">Contact<span class="highlight"> Us</span></h2>
+	    
+	<form>
+		
+		<div class="contact-form"><input name="name" placeholder=" Name" id="name" required type="text">
+		</div>
+		<div class="contact-form"><input name="Second Name" placeholder="topic" id="topic" required type="text">
+		</div>
+		 <div class ="contact-form">
+		 <input name="E-Mail Address" required placeholder="email" />
+		</div>
+		<div class="contact-form"><input type="tel" size="50%"
+				onkeypress="return onlyNumberKey(event)" />
+	</div>
+		</div>
+		<textarea class="message" placeholder="message" required></textarea>
+		    <br/>
+		<button class="btn-sub" type="submit" value="Submit"
+					onclick="return detailssubmit()">Submit</button>
+		   
+					
+	</form>
+
+</div>
+
+	<div class="maps">
+		<h2 style="font-weight: 20px;"> Our Location </h2>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.815481064606!2d36.82082881439371!3d-1.2846529990630122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d643350cf1%3A0x5d09abbf6f1d7f07!2sLonrho%20House%20-%20Store%2066!5e0!3m2!1ssw!2ske!4v1648211513335!5m2!1ssw!2ske" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+
+</div>
+	<script>
+		function onlyNumberKey(evt) {
+		
+		// Only ASCII character in that range allowed
+		var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+		if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+			return false;
+		return true;
+	}
+	function detailssubmit() {
+		alert("Your details were Submitted");
+	}
+</script>
+
+</body>
+</html>
